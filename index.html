@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css"> 
+  <title>Interactive rating component</title>
+</head>
+<body>
+
+<main>
+    <!-- Rating state start -->
+
+ <div class="Rating__state" id="Rating__state">
+  <picture>
+    <img class="Rating__state-img" src="images/icon-star.svg" alt="">
+  </picture>
+  <h2>How did we do?</h2>
+
+  <p class="Rating__state-paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+  <ul class="Rating__state-list" id="list-state">
+    <li class="Rating__state-item item-list" id="state">1</li>
+    <li class="Rating__state-item item-list" id="state">2</li>
+    <li class="Rating__state-item item-list" id="state">3</li>
+    <li class="Rating__state-item item-list" id="state">4</li>
+    <li class="Rating__state-item item-list" id="state">5</li>
+  </ul>
+
+  <button onclick="submitBtn()">Submit</button>
+ </div>
+  <!-- Rating state end -->
+  <!-- Thank you state start -->
+  
+ <div class="Thank__you__state oculto" id="Thank__you__state">
+  <picture>
+    <img class="Thank__you__state-img" src="images/illustration-thank-you.svg" alt="">
+  </picture>
+  <p class="message__youSelected"> You selected <span id="point__selected"></span> out of 5</p>
+
+  <h2>Thank you!</h2>
+
+ <p> We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+ </div>
+
+  <!-- Thank you state end -->
+</main>
+<script src="app.js"></script>
+</body>
+</html>
